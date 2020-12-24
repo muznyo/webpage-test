@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <link rel="stylesheet" href="style.css"
+  <head>
+    <title>Chonc</title>
+  </head>
+  <body>
+    <!-- Title -->
+    <h1>Test</h1>
+
+    <!-- Pictures that change with dark/light mode -->
+    <div class="horizontal-stack">
+      <a>
+        <picture>
+          <source srcset="dark/images/A.jpeg" media="(prefers-color-scheme: dark)">
+          <img src="light/images/A.jpeg">
+          <figcaption>This is a test</figcaption>
+        </picture>
+      </a>
+
+      <a>
+        <picture>
+          <source srcset="dark/images/B.jpeg" media="(prefers-color-scheme: dark)">
+          <img src="light/images/B.jpeg">
+          <figcaption>This is a test</figcaption>
+        </picture>
+      </a>
+
+      <a>
+        <picture>
+          <source srcset="dark/images/C.jpeg" media="(prefers-color-scheme: dark)">
+          <img src="light/images/C.jpeg">
+          <figcaption>This is a test</figcaption>
+        </picture>
+      </a>
+    </div>
+
+    <!-- Divider -->
+    <hr class="divider">
+  </body>
+</html>
