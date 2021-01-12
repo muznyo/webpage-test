@@ -74,7 +74,7 @@ h1 {
 
 /* Horizontal stack items */
 .horizontal-stack a {
-  width: 30%;
+  width: 192px;
   height: auto;
   overflow: auto;
   display: inline-block;
@@ -83,7 +83,7 @@ h1 {
 
 /* Images */
 img {
-  width: 192px;
+  width: 100%;
   height: auto;
   background-color: var(--elevated1);
   border: 1px solid var(--quaternary);
