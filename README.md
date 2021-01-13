@@ -8,3 +8,6 @@ I might upload randomly from time to time but this is just a test. Now you could
 - Vomit because my CSS is crap and I never get anything done
 
 idk man I spent more time making this readme than perfecting my css so yeah messy af
+
+# n
+shoutout to simpleflips
