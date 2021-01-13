@@ -92,6 +92,7 @@ img {
 
 /* Captions */
 figcaption {
+  padding-left: 8px;
   color: var(--secondary);
   font-size: smaller;
 }
