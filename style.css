@@ -66,6 +66,25 @@ h1 {
   margin-top: 5px;
 }
 
+/* Heading 2 */
+h2 {
+  font-size: x-large;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+p {
+  max-width: 75%;
+  color: var(--primary);
+}
+
+/* For mobile screens, fill the area */
+@media only screen and (max-width: 700px) {
+   p {
+      max-width: 100%;
+   }
+}
+
 /* Horizontal stack container */
 .horizontal-stack {
   overflow: auto;
@@ -74,11 +93,11 @@ h1 {
 
 /* Horizontal stack items */
 .horizontal-stack a {
-  width: 192px;
+  max-width: 192px;
   height: auto;
   overflow: auto;
   display: inline-block;
-  padding-inline-end: 1%;
+  padding-inline-end: 10px;
 }
 
 /* Images */
@@ -100,4 +119,15 @@ figcaption {
 /* Dividers */
 hr.divider {
   border: 1px solid var(--divider);
+}
+
+/* Buttons */
+button {
+  background-color: var(--elevated1);
+  color: var(--accent);
+}
+
+/* Change color on hover */
+button:hover {
+  background-color: var(--hover);
 }
