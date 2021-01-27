@@ -57,6 +57,7 @@ body {
   background-color: var(--background);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: small;
+  font-weight: normal;
   color: var(--primary);
 }
 
@@ -74,30 +75,52 @@ h2 {
 
 /* Paragraphs */
 p {
-  max-width: 75%;
+  width: 100%;
   color: var(--primary);
+  margin-top: 0px;
 }
 
-/* For mobile screens, fill the area */
+/* Horizontal stack container (never wrap) */
+.hstack-nw {
+  min-width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+
+/* Horizontal stack item */
+.hstack-nw a {
+  margin-inline-end: 10px;
+  min-width: 192px;
+}
+
+/* Horizontal stack container (wrap on small screens) */
+.hstack-wrap {
+  min-width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+
+/* Horizontal stack item */
+.hstack-wrap a {
+  min-width: 192px;
+}
+
+.hstack-nw img {
+  width: 192px;
+  height: 192px;
+}
+
+/* Adjust for mobile screens */
 @media only screen and (max-width: 700px) {
-   p {
-      max-width: 100%;
-   }
+  .hstack-wrap {
+    flex-wrap: wrap;
+  }
 }
 
-/* Horizontal stack container */
-.horizontal-stack {
-  overflow: auto;
-  white-space: nowrap;
-}
-
-/* Horizontal stack items */
-.horizontal-stack a {
-  max-width: 192px;
-  height: auto;
-  overflow: auto;
-  display: inline-block;
-  padding-inline-end: 10px;
+@media only screen and (min-width: 700px) {
+  .hstack-wrap a {
+    margin-inline-end: 25px;
+  }
 }
 
 /* Images */
@@ -123,11 +146,15 @@ hr.divider {
 
 /* Buttons */
 button {
+  height: 32px;
   background-color: var(--elevated1);
   color: var(--accent);
+  border: 1px solid var(--elevated1);
+  border-radius: 8px;
 }
 
 /* Change color on hover */
 button:hover {
   background-color: var(--hover);
+  border: 1px solid var(--hover);
 }
