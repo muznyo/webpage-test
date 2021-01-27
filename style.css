@@ -105,7 +105,13 @@ p {
   min-width: 192px;
 }
 
+/* Change image properties in horizontal stacks */
 .hstack-nw img {
+  width: 192px;
+  height: 192px;
+}
+
+.hstack-wrap img {
   width: 192px;
   height: 192px;
 }
