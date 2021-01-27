@@ -109,6 +109,7 @@ p {
 .hstack-nw img {
   width: 192px;
   height: 192px;
+  border: 1px solid var(--quaternary);
 }
 
 /* Adjust for mobile screens */
@@ -129,7 +130,6 @@ img {
   width: 100%;
   height: auto;
   background-color: var(--elevated1);
-  border: 1px solid var(--quaternary);
   border-radius: 8px;
 }
 
@@ -150,7 +150,7 @@ button {
   height: 32px;
   background-color: var(--elevated1);
   color: var(--accent);
-  border: 1px solid var(--elevated1);
+  border: 2px solid var(--elevated1);
   border-radius: 8px;
 }
 
