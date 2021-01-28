@@ -51,7 +51,7 @@
 }
 
 /* Applies to the entire body of the HTML document (except where overridden by more specific
-selectors). */
+selectors) */
 body {
   margin: 25px;
   background-color: var(--background);
@@ -117,10 +117,14 @@ p {
   .hstack-wrap {
     flex-wrap: wrap;
   }
+
+  .hstack-wrap a {
+    min-width: 100%;
+  }
 }
 
 @media only screen and (min-width: 700px) {
-  .hstack-wrap a {
+  .hstack-wrap a:not(:last-child) {
     margin-inline-end: 25px;
   }
 }
@@ -149,13 +153,34 @@ hr.divider {
 button {
   height: 32px;
   background-color: var(--elevated1);
+  margin-left: 0px;
   color: var(--accent);
   border: 2px solid var(--elevated1);
   border-radius: 8px;
 }
 
+/* Text only buttons */
+.text {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  margin-left: -2.7px;
+  border: 0px;
+}
+
+/* Make button smaller because of captions */
+.text.caption {
+  font-size: smaller;
+}
+
 /* Change color on hover */
 button:hover {
   background-color: var(--hover);
-  border: 1px solid var(--hover);
+  border: 2px solid var(--hover);
+}
+
+/* Remove hover background of text buttons */
+button:hover.text {
+  background-color: transparent;
+  border: 0px;
 }
