@@ -73,6 +73,12 @@ h2 {
   margin-top: 25px;
 }
 
+/* Heading 3 */
+h3 {
+  font-size: large;
+  margin-top: 25px;
+}
+
 /* Paragraphs */
 p {
   width: 100%;
@@ -89,7 +95,7 @@ p {
 
 /* Horizontal stack item */
 .hstack-nw a {
-  margin-inline-end: 10px;
+  margin-inline-end: 12px;
   min-width: 192px;
 }
 
@@ -107,9 +113,13 @@ p {
 
 /* Change image properties in horizontal stacks */
 .hstack-nw img {
-  width: 192px;
-  height: 192px;
-  border: 1px solid var(--quaternary);
+  width: 190px;
+  height: 190px;
+}
+
+.hstack-wrap img {
+  width: 190px;
+  height: auto;
 }
 
 /* Adjust for mobile screens */
@@ -121,11 +131,16 @@ p {
   .hstack-wrap a {
     min-width: 100%;
   }
+
+  .hstack-wrap img {
+    width: 100%;
+    border: 0px;
+  }
 }
 
 @media only screen and (min-width: 700px) {
   .hstack-wrap a:not(:last-child) {
-    margin-inline-end: 25px;
+    margin-inline-end: 32px;
   }
 }
 
@@ -135,11 +150,13 @@ img {
   height: auto;
   background-color: var(--elevated1);
   border-radius: 8px;
+  border: 1px solid var(--quaternary);
 }
 
 /* Captions */
 figcaption {
   padding-left: 8px;
+  max-width: 184px;
   color: var(--secondary);
   font-size: smaller;
 }
@@ -147,6 +164,8 @@ figcaption {
 /* Dividers */
 hr.divider {
   border: 1px solid var(--divider);
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 /* Buttons */
