@@ -9,5 +9,5 @@ I might upload randomly from time to time but this is just a test. Now you could
 
 idk man I spent more time making this readme than perfecting my css so yeah messy af
 
-# n
+## n
 shoutout to simpleflips
