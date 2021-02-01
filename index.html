@@ -1,73 +1,94 @@
 <!doctype html>
-<html>
-  <link rel="stylesheet" href="style.css"
+<html lang="en">
   <head>
+    <meta charset="utf-8"/>
     <title>Project Dough</title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="colors.css"/>
+    <link rel="stylesheet" href="mobile-adjustment.css"/>
     <link rel="icon" type="image/png" href="assets/icon.png"/>
   </head>
+
   <body>
     <!-- Title -->
     <h1>Project Dough</h1>
 
-    <!-- Intro paragraph -->
-    <p>Hey fellow bread lover. I think we can agree on the fact that bread deserves
-      more recognition. It's truly a versatile food, and it stood the test of time
-      really well. You may not like some variants, and that's okay! But bread is
-      undeniably great. That's why I made Dough Project! With your help, we'll be
-      able to establish a fully functional bread kingdom.</p>
+    <!-- Intro paragraph and contents table -->
+    <div class="hstack-wrap">
+      <div class="hstack-wrap-item">
+        <p>Hey fellow bread lover. I think we can agree on the fact that bread deserves
+          more recognition. It's truly a versatile food, and it stood the test of time
+          really well. You may not like some variants, and that's okay! But bread is
+          undeniably great. That's why I made Project Dough! With your help, we'll be
+          able to establish a fully functional bread kingdom. </p>
+    
+        <p>Down below we'll take a look at the history of bread, the different variants,
+          you know the deal.</p>
+      </div>
 
-    <p>Down below we'll take a look at the history of bread, the different variants,
-      you know the deal.</p>
+  		<!-- Contents table -->
+    	<div class="hstack-wrap-item">
+        <ol>
+          <li><a href="#1">Bread</a>
+            <ol>
+              <li><a href="#11">Fun Facts</a></li>
+              <li><a href="#12">Quotes</a></li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+    </div>
 
     <hr class="divider"/>
 
     <!-- Pictures that change with dark/light mode -->
     <div class="hstack-nw">
-      <a>
+      <div class="hstack-nw-item">
         <picture>
           <img src="assets/bread/arepa.jpeg"/>
           <figcaption>Arepa, a south american dish.</figcaption>
         </picture>
-      </a>
+      </div>
 
-      <a>
+      <div class="hstack-nw-item">
         <picture>
           <img src="assets/bread/bagel.jpeg"/>
           <figcaption>A very trustworthy bagel.</figcaption>
         </picture>
-      </a>
+      </div>
 
-      <a>
+      <div class="hstack-nw-item">
         <picture>
           <img src="assets/bread/crepes.jpeg"/>
           <figcaption>Crepes deserve more recognition.</figcaption>
         </picture>
-      </a>
+      </div>
 
-      <a>
+      <div class="hstack-nw-item">
         <picture>
           <img src="assets/bread/pretzel.jpeg"/>
           <figcaption>Just a pretzel.</figcaption>
         </picture>
-      </a>
+      </div>
 
-      <a>
+      <div class="hstack-nw-item">
         <picture>
           <img src="assets/bread/white.jpeg"/>
           <figcaption>Good ol' white bread. It doesn't bite.</figcaption>
         </picture>
-      </a>
+      </div>
     </div>
 
     <!-- Divider -->
     <hr class="divider">
 
     <!-- Bread related -->
-    <h2>Bread</h2>
+    <h2 id="1">Bread</h2>
 
     <!-- Small paragraph about bread -->
     <div class="hstack-wrap">
-      <a>
+      <div class="hstack-wrap-item">
         <p>Bread is a staple food prepared from a dough of flour and water,
           usually by baking. Throughout recorded history, it has been a prominent
           food in large parts of the world. It is one of the oldest man-made foods,
@@ -86,33 +107,31 @@
           love bread, it's truly the best food ever, period. If you argue there's
           anything better than my trustworthy bread (unless it's cats ofc), your last
           words will be exactly those you had the "courage" to spit out of your mouth.</p>
-      </a>
+      </div>
 
-  		<!-- Button to order bread -->
-    	<a>
+  		<!-- Bread best -->
+    	<div class="hstack-wrap-item">
         <img src="assets/bread/white.jpeg">
         <figcaption>Bread is best food.</figcaption>
-    		<button class="text caption">Order now...</button>
-    	</a>
+      </div>
     </div>
 
-    <!-- Bread quirks -->
-    <h3>Fun bread quirks</h3>
-    <div class="hstack-wrap">
-      <a>
-        <p>Sourdough bread is made with a starter which is essentially a mixture of flour
-          and water that attracts wild yeast in the air and ferments it within itself so
-          it can be used as a leavening agent. Most artisanal sourdough bread have very high
-          hydration rates, around 65 to 70 percent, that is the amount of water is 65 to 70
-          percent of the amount of flour by weight. To bake them, they will use a very hot
-          oven that's also aided with steam to keep the outer layer of the dough moist so it
-          rises well without cracking like a pasty white girl at 38.</p>
-      </a>
+    <!-- Fun facts about bread -->
+    <h3 id="11">Fun Facts</h3>
+    <ul>
+      <li>Bread mold fungus draws nutrients from the bread for its survival, and destroys
+        the bread in the process.</li>
+      <li>The most common bread in Lima, Peru’s capital, is called Pan Francés, which
+        means French bread. However, the bread has nothing to do with France and Pan
+        Francés doesn’t even exist in France.</li>
+      <li>Bread is one of the only foods that eaten by people of every race, region and
+        culture.</li>
+      <li>In Russia, bread and salt are symbols of “welcome.”</li>
+      <li>Breaking bread is a universal sign of peace.</li>
+    </ul>
 
-      <a>
-        <img src="assets/bread/bagel.jpeg"/>
-        <figcaption>Microwave bread fact.</figcaption>
-      </a>
-    </div>
+    <!-- Stuff people say about bread -->
+    <h3 id="12">Quotes</h3>
+
   </body>
 </html>
