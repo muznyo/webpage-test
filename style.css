@@ -85,7 +85,13 @@ h4 {
 /* Links */
 a {
   color: var(--accent);
+  font-weight: bold;
   text-decoration: none;
+}
+
+/* Add underline on hover */
+a:hover {
+  text-decoration: underline;
 }
 
 /* Paragraphs */
