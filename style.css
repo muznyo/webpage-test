@@ -84,14 +84,18 @@ h4 {
 
 /* Links */
 a {
-  color: var(--accent);
-  font-weight: bold;
+  color: var(--links);
   text-decoration: none;
 }
 
 /* Add underline on hover */
 a:hover {
   text-decoration: underline;
+}
+
+/* Change visited link color */
+a:visited {
+  color: var(--visited);
 }
 
 /* Paragraphs */
@@ -135,7 +139,7 @@ ul {
 /* Style bullets */
 ul li::before {
   content: "\2022";
-  color: var(--accent);
+  color: var(--secondary);
   font-weight: bold;
   display: inline-block;
   width: 12px;

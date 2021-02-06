@@ -22,6 +22,12 @@
   
     /* Hover */
     --hover: #D1D1D6;
+
+    /* Links */
+    --links: #007AFF;
+
+    /* Visited links */
+    --visited: #AF52DE;
   }
   
   /* Dark mode colors */
@@ -47,5 +53,11 @@
   
       /* Hover */
       --hover: #3A3A3C;
+
+      /* Links */
+      --links: #0A84FF;
+
+      /* Visited links */
+      --visited: #BF5AF2;
     }
   }
