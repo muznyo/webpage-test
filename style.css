@@ -55,7 +55,7 @@ body {
   background-color: var(--elevated1);
   padding: 8px;
   width: auto;
-  max-height: 1.9rem;
+  max-height: 1.9em;
   overflow: hidden;
   overflow-wrap: normal;
 
