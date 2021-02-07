@@ -55,7 +55,7 @@ body {
   background-color: var(--elevated1);
   padding: 8px;
   width: auto;
-  max-height: 1.9em;
+  max-height: 1.75em;
   overflow: hidden;
   overflow-wrap: normal;
 
@@ -93,7 +93,7 @@ h4 {
   color: var(--accent);
   font-size: medium;
   margin-top: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 1em;
 }
 
 /* Links */
