@@ -138,8 +138,13 @@ figcaption {
   font-size: small;
 }
 
-/* Add padding to account for rounded corners on pictures */
+/* Add padding on pictures and elevated sections */
 picture figcaption {
+  padding: 0 8px 0 8px;
+  box-sizing: content-box;
+}
+
+.elevated-section figcaption {
   padding: 0 8px 0 8px;
   box-sizing: content-box;
 }
