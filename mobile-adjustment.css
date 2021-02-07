@@ -7,6 +7,7 @@
 
     .hstack-wrap-item {
         min-width: 100%;
+        margin-bottom: 8px;
     }
 
     .hstack-wrap img {
@@ -18,6 +19,6 @@
 /* Add margin to horizontal stacks that can wrap */
 @media only screen and (min-width: 700px) {
     .hstack-wrap-item:not(:last-child) {
-        padding-inline-end: 32px;
+        margin-inline-end: 8px;
     }
 }
