@@ -123,6 +123,15 @@ img {
   border: 1px solid var(--quaternary);
 }
 
+/* Videos */
+video {
+  width: 100%;
+  height: auto;
+  background-color: var(--elevated1);
+  border-radius: 8px;
+  border: 1px solid var(--quaternary);
+}
+
 /* Captions */
 figcaption {
   color: var(--secondary);
